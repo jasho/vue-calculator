@@ -1,6 +1,6 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
+  "name": "vue-calculator",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -47,5 +47,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "Super simple calculator made with Vue.js",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylbutlr/vue-calculator.git"
+  },
+  "author": "Kyle Butler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylbutlr/vue-calculator/issues"
+  },
+  "homepage": "https://github.com/kylbutlr/vue-calculator#readme"
 }
