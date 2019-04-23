@@ -22,6 +22,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #111;
-  margin-top: 60px;
+  margin: 20% auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  #app {
+    margin: 10% auto;
+  }
 }
 </style>

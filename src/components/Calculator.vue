@@ -93,8 +93,7 @@ export default {
 <style scoped>
 .calculator {
   margin: auto;
-  width: 60vw;
-  height: 60vh;
+  width: 80vw;
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -109,6 +108,7 @@ export default {
   border: 1px solid #111;
   font-size: 2.5rem;
   cursor: default;
+  height: 10vh;
 }
 
 .zero {
@@ -123,5 +123,41 @@ export default {
 
 .operator {
   background-color: #acce33;
+}
+
+@media only screen and (min-width: 768px) {
+  .calculator {
+    width: 50vw;
+    grid-auto-rows: minmax(7.5vh, auto);
+    line-height: 7.5vh;
+  }
+  
+  .display {
+    height: 7.5vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .calculator {
+    width: 30vw;
+    grid-auto-rows: minmax(7.5vh, auto);
+    line-height: 7.5vh;
+  }
+  
+  .display {
+    height: 7.5vh;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .calculator {
+    width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .calculator {
+    width: 15vw;
+  }
 }
 </style>
