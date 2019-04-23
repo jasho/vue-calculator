@@ -1,9 +1,9 @@
 <template>
   <div class='calculator'>
     <div class='display'>{{display}}</div>
-    <div @click='clear' class='button'>C</div>
-    <div @click='sign' class='button'>+/-</div>
-    <div @click='percent' class='button'>%</div>
+    <div @click='clear' class='button darker'>C</div>
+    <div @click='sign' class='button darker'>+/-</div>
+    <div @click='percent' class='button darker'>%</div>
     <div @click='divide' class='button operator'>÷</div>
     <div @click='append(7)' class='button'>7</div>
     <div @click='append(9)' class='button'>9</div>
@@ -18,7 +18,7 @@
     <div @click='append(3)' class='button'>3</div>
     <div @click='add' class='button operator'>+</div>
     <div @click='append(0)' class='button zero'>0</div>
-    <div @click='decimal' class='button'>.</div>
+    <div @click='decimal' class='button darker'>.</div>
     <div @click='equal' class='button operator'>=</div>
   </div>
 </template>
@@ -109,6 +109,9 @@ export default {
   font-size: 2.5rem;
   cursor: default;
   height: 10vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.5rem 0 2.5rem;
 }
 
 .zero {
@@ -116,13 +119,17 @@ export default {
 }
 
 .button {
-  background-color: #bfbfbf;
+  background-color: hsl(0, 0%, 75%);
   border: 1px solid #111;
   cursor: pointer;
 }
 
 .operator {
-  background-color: #acce33;
+  background-color: hsl(73, 60%, 60%);
+}
+
+.darker {
+  background-color: hsl(0, 0%, 65%);
 }
 
 @media only screen and (min-width: 768px) {
