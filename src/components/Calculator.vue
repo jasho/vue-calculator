@@ -1,5 +1,5 @@
 <template>
-  <div class='calculator'>
+  <div class='calculator' onselectstart='return false'>
     <div class='display'>{{display}}</div>
     <div @click='clear' class='button darker'>C</div>
     <div @click='sign' class='button darker'>+/-</div>
@@ -108,10 +108,9 @@ export default {
   border: 1px solid #111;
   font-size: 2.5rem;
   cursor: default;
-  height: 10vh;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 0.5rem 0 2.5rem;
+  padding: 0 1rem;
 }
 
 .zero {
@@ -138,10 +137,6 @@ export default {
     grid-auto-rows: minmax(7.5vh, auto);
     line-height: 7.5vh;
   }
-  
-  .display {
-    height: 7.5vh;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -149,10 +144,6 @@ export default {
     width: 30vw;
     grid-auto-rows: minmax(7.5vh, auto);
     line-height: 7.5vh;
-  }
-  
-  .display {
-    height: 7.5vh;
   }
 }
 
