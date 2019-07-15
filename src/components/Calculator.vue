@@ -17,9 +17,9 @@
     <div @click='append(2)' class='button'>2</div>
     <div @click='append(3)' class='button'>3</div>
     <div @click='add' class='button operator'>+</div>
-    <div @click='append(0)' class='button zero'>0</div>
-    <div @click='decimal' class='button darker'>.</div>
-    <div @click='equal' class='button operator'>=</div>
+    <div @click='append(0)' class='button zero button-bottom'>0</div>
+    <div @click='decimal' class='button darker button-bottom'>.</div>
+    <div @click='equal' class='button operator button-bottom'>=</div>
   </div>
 </template>
 
@@ -98,14 +98,15 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(10vh, auto);
-  border: 1px solid #111;
+  border: 5px solid #111;
   line-height: 10vh;
 }
 
 .display {
   grid-column: 1 / 5;
-  background-color: #ececec;
+  background-color: #ccc;
   border: 1px solid #111;
+  border-top: 0;
   font-size: 2.5rem;
   cursor: default;
   overflow: hidden;
@@ -121,6 +122,10 @@ export default {
   background-color: hsl(0, 0%, 75%);
   border: 1px solid #111;
   cursor: pointer;
+}
+
+.button-bottom {
+  border-bottom: 0;
 }
 
 .operator {
