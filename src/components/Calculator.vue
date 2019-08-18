@@ -99,12 +99,13 @@ export default {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(10vh, auto);
   border: 5px solid #111;
+  box-shadow: -3px 3px 15px rgba(17,17,17,0.4);
   line-height: 10vh;
 }
 
 .display {
   grid-column: 1 / 5;
-  background-color: #ccc;
+  background: #ddd;
   border: 1px solid #111;
   border-top: 0;
   font-size: 2.5rem;
@@ -119,7 +120,8 @@ export default {
 }
 
 .button {
-  background-color: hsl(0, 0%, 75%);
+  background: hsl(0, 0%, 80%);
+  background: linear-gradient(15deg,hsl(0, 0%, 70%) 0%, hsl(0, 0%, 80%) 100%);
   border: 1px solid #111;
   cursor: pointer;
 }
@@ -137,11 +139,13 @@ export default {
 }
 
 .operator {
-  background-color: hsl(73, 60%, 60%);
+  background: hsl(73, 60%, 65%);
+  background: linear-gradient(15deg,hsl(73, 60%, 55%) 0%, hsl(73, 60%, 65%) 100%);
 }
 
 .darker {
-  background-color: hsl(0, 0%, 65%);
+  background: hsl(0, 0%, 70%);
+  background: linear-gradient(15deg, hsl(0, 0%, 60%) 0%, hsl(0, 0%, 70%) 100%);
 }
 
 @media only screen and (min-width: 768px) {
