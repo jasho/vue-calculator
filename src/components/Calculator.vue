@@ -139,8 +139,8 @@ export default {
 }
 
 .operator {
-  background: hsl(73, 60%, 65%);
-  background: linear-gradient(15deg,hsl(73, 60%, 55%) 0%, hsl(73, 60%, 65%) 100%);
+  background: hsl(153, 48%, 49%);
+  background: linear-gradient(15deg,hsl(153, 48%, 39%) 0%, hsl(153, 48%, 49%) 100%);
 }
 
 .darker {
