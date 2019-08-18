@@ -124,6 +124,14 @@ export default {
   cursor: pointer;
 }
 
+.button:active {
+  outline:none;
+  border: 1px solid #000000BF; 
+  box-shadow: inset 0px 0px 5px #00000080; 
+  -moz-box-shadow: inset 0px 0px 5px #00000080;
+  -webkit-box-shadow: inset 0px 0px 5px #00000080;
+}
+
 .button-bottom {
   border-bottom: 0;
 }
