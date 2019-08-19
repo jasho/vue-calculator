@@ -6,8 +6,8 @@
     <div @click='percent' class='button darker'>%</div>
     <div @click='divide' class='button operator'>÷</div>
     <div @click='append(7)' class='button'>7</div>
-    <div @click='append(9)' class='button'>9</div>
     <div @click='append(8)' class='button'>8</div>
+    <div @click='append(9)' class='button'>9</div>
     <div @click='multiply' class='button operator'>x</div>
     <div @click='append(4)' class='button'>4</div>
     <div @click='append(5)' class='button'>5</div>
