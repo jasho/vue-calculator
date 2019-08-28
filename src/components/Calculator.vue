@@ -92,7 +92,7 @@ export default {
 
 <style scoped>
 .calculator {
-  margin: auto;
+  margin: 0 auto;
   width: 80vw;
   font-size: 2rem;
   display: grid;
@@ -159,8 +159,6 @@ export default {
 @media only screen and (min-width: 1024px) {
   .calculator {
     width: 30vw;
-    grid-auto-rows: minmax(7.5vh, auto);
-    line-height: 7.5vh;
   }
 }
 

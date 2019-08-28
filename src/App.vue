@@ -25,9 +25,9 @@ export default {
   margin: 20% auto;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #app {
-    margin: 10% auto;
+    margin: 5% auto;
   }
 }
 </style>
