@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vue Calculator</string>
+    <string name="asset_statements">
+        [{
+            \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+            \"target\": {
+                \"namespace\": \"web\",
+                \"site\": \"https://wug-days-pwa-demo.azurewebsites.net\"}
+        }]
+    </string>
+</resources>
