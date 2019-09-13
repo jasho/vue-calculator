@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : 
+    { 
+        "namespace": "android_app",
+        "package_name": "wugdays.demo.pwa",
+        "sha256_cert_fingerprints": ["60:0D:D9:E0:39:1C:9C:9A:20:7C:B5:52:C6:6C:E1:93:27:D0:A4:37:54:D5:2A:27:01:10:CE:23:43:B0:5A:8E"] 
+    }
+}]
